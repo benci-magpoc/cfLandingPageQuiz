@@ -1,0 +1,201 @@
+:root {
+    --cf-dark: #212121;
+    --cf-light: #ebebeb;
+    --cf-darkblue: #00223d;
+    --cf-highlight: #fae100;
+
+    /* fonts */
+    --bm-title-font: 'Racing Sans One', cursive;
+    --bm-subtitle-font: 'Fira Sans', sans-serif;
+    --bm-heading-font: 'Bebas Neue', sans-serif;
+    --bm-body-font: 'Roboto', sans-serif;
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    font-family: var(--bm-heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: var(--cf-light);
+
+}
+
+.mainTitle {
+    font-family: var(--bm-title-font);
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    line-height: 2.2rem;
+    display: inline-block;
+}
+
+.subTitle {
+    font-family: var(--bm-subtitle-font);
+    font-size: .9rem;
+    letter-spacing: .01rem;
+    width: inherit;
+    font-weight: 100;
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--bm-body-font);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cf-darkblue);
+    background-image: url("../img/LandingPage_576.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    height: 100%;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+/* Navbar customization */
+
+.navbar-toggler {
+    color: var(--cf-highlight) !important;
+}
+
+.navbar-toggler-icon-bm {
+    color: var(--cf-light);
+    font-size: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#mainNav button {
+    border-color: var(--cf-light);
+}
+
+.navBar-text {
+    color: var(--cf-light);
+}
+
+.navBar-transparent {
+    background-color: transparent;
+}
+
+.navBar-image {
+    height: 50px;
+    width: 50px;
+}
+
+/* Button Customization */
+.btn-color {
+    background-color: var(--cf-highlight);
+    color: var(--cf-dark);
+}
+
+main button:hover {
+    border-color: var(--cf-light);
+    filter: brightness(1.1) !important;
+}
+
+main button:active,
+main button:visited,
+main button:focus {
+    border-color: var(--cf-darkblue);
+    background-color: var(--cf-light);
+    filter: brightness(1.1) !important;
+}
+
+
+
+/* Breakpoints */
+
+
+@media (min-width: 575.98px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        background-image: url("../img/LandingPage_576.png");
+        background-position: top;
+    }
+
+}
+
+/* Medium */
+@media (min-width: 767.98px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        background-image: url("../img/LandingPage_768.png");
+        background-position: top right;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+
+    .navBar-image {
+        height: 100px;
+        width: 100px;
+    }
+
+    .mainTitle {
+        font-family: var(--bm-title-font);
+        font-size: 4rem;
+        letter-spacing: .1rem;
+        line-height: 2.7rem;
+        display: inline-block;
+    }
+
+    .subTitle {
+        font-family: var(--bm-subtitle-font);
+        font-size: 1.2rem;
+        letter-spacing: .3rem;
+        width: inherit;
+    }
+}
+
+/* Large */
+@media (min-width: 991.98px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        /* background-image: url("/img/LandingPage_990.png"); */
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Extra Large */
+@media (min-width: 1199.98px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--cf-darkblue);
+        background-image: url("../img/LandingPage_1920.png");
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Extra Extra Large */
+@media (min-width: 1399.98px) {}
